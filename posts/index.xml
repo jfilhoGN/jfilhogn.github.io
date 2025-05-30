@@ -7,5 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Fri, 30 May 2025 19:44:19 -0300</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bem Vindo</title>
+      <link>https://example.org/posts/bem-vindo/</link>
+      <pubDate>Fri, 30 May 2025 19:44:19 -0300</pubDate>
+      
+      <guid>https://example.org/posts/bem-vindo/</guid>
+      
+        <description>&lt;p&gt;Olá, seja bem-vindo ao meu blog!
+Este é um espaço onde compartilho minhas ideias, projetos e aprendizados. Espero que você encontre aqui conteúdos interessantes e inspiradores voltados para tecnologia, programação e desenvolvimento pessoal.&lt;/p&gt;
+&lt;p&gt;Anteriormente eu escrevia no Substack, mas decidi migrar para este novo espaço. Aqui, pretendo trazer uma abordagem mais pessoal e direta, compartilhando não apenas artigos técnicos, mas também reflexões sobre minha jornada na área de tecnologia.&lt;/p&gt;
+&lt;p&gt;Mas antes de tudo, tenho que me apresentar certo? Então, aqui vai:&lt;/p&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>
