@@ -2,17 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Blog - João Martins Filho</title>
-    <link>https://example.org/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Blog - João Martins Filho</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 30 May 2025 19:44:19 -0300</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Oct 2025 19:44:19 -0300</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comunicação e Desenvolvimento de Software</title>
+      <link>http://localhost:1313/posts/estrategias-estudo/</link>
+      <pubDate>Tue, 21 Oct 2025 19:44:19 -0300</pubDate>
+      
+      <guid>http://localhost:1313/posts/estrategias-estudo/</guid>
+      
+        <description>&lt;p&gt;Desde os primórdios a comunicação é a base para qualquer criação humana, bem como para o desenvolvimento da sociedade que temos atualmente. Segundo historiadores a escrita a partir de pinturas rupestres é datado de 15.000 a.C.&lt;/p&gt;
+&lt;p&gt;Além da história, podemos pegar um dos acontecimentos descrito na Bíblia, a passagem da Torre de Babel. Segundo a bíblia a Torre de Babel foi o segundo maior projeto de engenharia da humanidade, antecedido pela Arca de Noé, porém foi também o primeiro fiasco da engenharia, e o que ocorreu para ser esse fiasco?&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Bem Vindo</title>
-      <link>https://example.org/posts/bem-vindo/</link>
+      <link>http://localhost:1313/posts/bem-vindo/</link>
       <pubDate>Fri, 30 May 2025 19:44:19 -0300</pubDate>
       
-      <guid>https://example.org/posts/bem-vindo/</guid>
+      <guid>http://localhost:1313/posts/bem-vindo/</guid>
       
         <description>&lt;p&gt;Olá, seja bem-vindo ao meu blog!
 Este é um espaço onde compartilho minhas ideias, projetos e aprendizados. Espero que você encontre aqui conteúdos interessantes e inspiradores voltados para tecnologia, programação e desenvolvimento pessoal.&lt;/p&gt;
