@@ -1,0 +1,372 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    
+        |
+        Pipeline Cypress Gitlab
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="" />
+  <meta
+    name="description"
+    content="Esse tutorial tem como objetivo mostrar de maneira básica como se criar uma pipeline para o sistema de armazenamento de código Gitlab."
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.7a694fa58e76745d737e69fb2356353688d4883a950ee2882166c7b4e924ca24.css" integrity="sha256-emlPpY52dF1zfmn7I1Y1NojUiDqVDuKIIWbHtOkkyiQ=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://jfilhogn.github.io/posts/pipeline-cypress-gitlab/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Pipeline Cypress Gitlab">
+  <meta name="twitter:description" content="Esse tutorial tem como objetivo mostrar de maneira básica como se criar uma pipeline para o sistema de armazenamento de código Gitlab.">
+
+
+
+  
+  <meta property="og:url" content="https://jfilhogn.github.io/posts/pipeline-cypress-gitlab/">
+  <meta property="og:site_name" content="Blog - João Martins Filho">
+  <meta property="og:title" content="Pipeline Cypress Gitlab">
+  <meta property="og:description" content="Esse tutorial tem como objetivo mostrar de maneira básica como se criar uma pipeline para o sistema de armazenamento de código Gitlab.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-04-29T03:20:22+00:00">
+    <meta property="article:modified_time" content="2023-04-29T03:20:22+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Pipeline Cypress Gitlab",
+        "headline": "Pipeline Cypress Gitlab",
+        "alternativeHeadline": "",
+        "description": "
+      Esse tutorial tem como objetivo mostrar de maneira básica como se criar uma pipeline para o sistema de armazenamento de código Gitlab.
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/jfilhogn.github.io\/posts\/pipeline-cypress-gitlab\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "dateCreated": "2023-04-29T03:20:22.82Z",
+        "datePublished": "2023-04-29T03:20:22.82Z",
+        "dateModified": "2023-04-29T03:20:22.82Z",
+        "publisher":{
+            "@type":"Organization",
+            "name":  null ,
+            "url": "https://jfilhogn.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/jfilhogn.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/jfilhogn.github.io\/posts\/pipeline-cypress-gitlab\/",
+        "wordCount" : "786",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/IMG-0019.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Pipeline Cypress Gitlab</h1>
+      
+      <p>Esse tutorial tem como objetivo mostrar de maneira básica como se criar uma <em>pipeline</em> para o sistema de armazenamento de código Gitlab.</p>
+<p>Para entender esse tutorial, realizei uma divisão para entendermos um pouco mais sobre o funcionamento de uma <em>pipeline</em> e a partir desse conhecimento inicial conhecermos como criar a <em>pipeline</em> para testes automatizados com o Cypress.</p>
+<h4 id="básico-sobre-pipelines">Básico sobre pipelines</h4>
+<p><em>Pipeline</em> é um componente de integração, entrega e implementação contínua (CI/CD). Cada <em>pipeline</em> é composta por <em>jobs</em> que definem o que será feito pela determinada <em>pipeline</em>, essa pode ser de compilação de um projeto, teste ou integração. Uma <em>pipeline</em> criada corretamente simplifica a forma como o código é integrado e com uso de fluxos automatizados faz com que se diminua a chance de erro humano.</p>
+<p>Para se criar uma <em>pipeline</em> no gitlab, como padrão deve ser criado um arquivo <code>.YML</code> na raiz do projeto com o nome de <code>gitlab-ci.yml</code>.</p>
+<p>A partir do entendimento sobre o que é <em>pipeline</em> precisamos conhecer um pouco da nomenclatura de cada parte de uma <em>pipeline</em>:</p>
+<ul>
+<li><strong>Runner</strong>: Um agente que tem como objetivo executar cada trabalho individualmente, esse sendo escalável a partir da necessidade da aplicação.</li>
+<li><strong>Job</strong>: Instruções que um <em>runner</em> deve executar.</li>
+<li><strong>Pipeline</strong>: uma coleção de<em>jobs</em> dividido em diferentes estágios.</li>
+<li><strong>Estágios</strong>: são palavras chaves que define determinados estágios de uma tarefa, esses estágios podem ser de <em>deploy</em>, de teste, <em>build</em>.</li>
+</ul>
+<p>Para exemplificar melhor essas etapas imagem abaixo demonstra uma <em>pipeline</em> que possui 4 estágios sendo elas de <em>Build</em>, <em>Test</em>, <em>Deploy</em> e <em>Production</em>, e para cada estágio há os <em>jobs</em> que são as execuções de uma determinada tarefa, como exemplo na etapa de testes há dois <em>jobs</em> que realizam um determinado tipo de teste.</p>
+<p><img src="/images/posts/pipeline-cypress-gitlab/image-01.png" alt="Exemplo de como a pipeline é vista."></p>
+<p>Exemplo de como a pipeline é vista.</p>
+<p>Agora podemos implementar a <em>pipeline</em> com o Cypress.</p>
+<h4 id="pipeline-paracypress">Pipeline para Cypress</h4>
+<p>Assim que criado o arquivo na raiz do projeto com o nome <code>gitlab-ci.yml</code> a primeira informação que devemos adicionar é a imagem que será utilizado para a execução dos <em>jobs</em>. É uma imagem <em>docker</em> na qual todos os jobs irão executar, para nosso tutorial estou usando a imagem <code>cypress/base:14.16.0</code>, essa imagem possuem características que a torna a execução mais rápida por não possuir dependências para instalação, bem como é oficial do próprio Cypress deixando a segura. Caso queira escolher outra imagem basta acessar o <a href="https://hub.docker.com/">docker hub</a>.</p>
+<p>Com a escolha da imagem devemos dividir os estágios da <em>pipeline</em>, para o tutorial há somente um estágio, sendo esse para teste, na qual terá dois dois <em>jobs</em> que realizaram a tarefa.</p>
+<p>O primeiro <em>job</em> tem como nome <code>teste-api</code>, na qual sua responsabilidade é realizar a execução de testes de API com o Cypress, dentro desse <em>job</em> há o <em>script</em> que são os comandos que você quer que o <em>job</em> execute. Nessa etapa deve-se possuir um conhecimento básico de comandos de linha de comando, aqui no exemplo os comandos que ele faz é de <em>node</em>. Um exemplo bem legal sobre essa etapa é se lembrar dos comandos que usou para executar a primeira vez o Cypress na máquina local.</p>
+<p>O primeiro comando <code>npm ci --prefer-offline</code> é executado para evitar que o <em>node</em> fique procurando por versões mais recentes tornando assim a execução do <em>job</em> mais rápido.</p>
+<p>O segundo comando <code>npm install</code> é usado para instalar todas as dependências que estão no arquivo <code>package.json</code>.</p>
+<p>Por fim, o terceiro comando é para execução o teste com o Cypress, esse comando <code>npm run cy:run:api</code> é um atalho criado dentro do <code>package.json</code> , sendo o comando completo dele esse <code>npx cypress run --config-file=cypress/config/api.json --spec \&quot;cypress/integration/api/\*\*\&quot;</code>, vale ressaltar por ser uma imagem <em>docker</em> e está não tem interface gráfica, assim é utilizando o comando <code>npm run</code> que executa o <em>cypress</em> em versão sem uma interface gráfica.</p>
+<p>Dessa forma foi criado o <em>job</em> para os testes de API. Visualizando no código abaixo, percebe-se que há uma duplicação com uma diferença para qual será a execução dos testes, sendo o segundo para testes <em>end-to-end</em>.</p>
+<pre><code>image: cypress/base:14.16.0
+
+stages:
+  - test
+
+test-api:
+  stage: test
+  script:
+    - npm ci --prefer-offline
+    - npm install
+    - npm run cy:run:api
+
+test-e2e:
+  stage: test
+  script:
+    - npm ci --prefer-offline
+    - npm install
+    - npm run cy:run:e2e
+</code></pre>
+<p>Para esse tutorial foi desenvolvido essa <em>pipeline</em> básica contendo informações iniciais, para se aprimorar na criação de <em>pipelines</em> para o Gitlab basta acessar a documentação que se encontra nas referências desse artigo. Será percebido que para essa <em>pipeline</em> poderia ter sido utilizado formas de evitar duplicação de código, exemplo <code>extends</code>, bem como criação de <em>triggers</em> que pode ser executado em uma determinada data e hora.</p>
+<h4 id="mais-informações">Mais informações</h4>
+<p>Para ver em execução a <em>pipeline</em> basta acessar o repositório do <a href="https://gitlab.com/joaomfilho1995/teste-warren/-/pipelines/508076711">Gitlab</a> desse projeto exemplo e verificar como é visualizado os <em>log</em> da execução dos testes. Qualquer dúvida deixe nos comentários :).</p>
+<h4 id="referências">Referências</h4>
+<ul>
+<li>Documentação <a href="https://docs.gitlab.com/ee/ci/pipelines/">Gitlab</a>.</li>
+</ul>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

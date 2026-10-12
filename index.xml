@@ -2,34 +2,385 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog - João Martins Filho</title>
-    <link>http://localhost:1313/</link>
+    <link>https://jfilhogn.github.io/</link>
     <description>Recent content on Blog - João Martins Filho</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Tue, 21 Oct 2025 19:44:19 -0300</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2026 21:05:57 +0000</lastBuildDate><atom:link href="https://jfilhogn.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Comunicação e Desenvolvimento de Software</title>
-      <link>http://localhost:1313/posts/estrategias-estudo/</link>
-      <pubDate>Tue, 21 Oct 2025 19:44:19 -0300</pubDate>
+      <title>O que é ser um Tech Product Manager? De Entregas Técnicas a Capacidades de Negócio</title>
+      <link>https://jfilhogn.github.io/posts/o-que-e-ser-um-tech-product-manager-de-entregas-tecnicas-a-capacidades-de-negocio/</link>
+      <pubDate>Mon, 12 Oct 2026 21:05:57 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/estrategias-estudo/</guid>
+      <guid>https://jfilhogn.github.io/posts/o-que-e-ser-um-tech-product-manager-de-entregas-tecnicas-a-capacidades-de-negocio/</guid>
       
-        <description>&lt;p&gt;Desde os primórdios a comunicação é a base para qualquer criação humana, bem como para o desenvolvimento da sociedade que temos atualmente. Segundo historiadores a escrita a partir de pinturas rupestres é datado de 15.000 a.C.&lt;/p&gt;
-&lt;p&gt;Além da história, podemos pegar um dos acontecimentos descrito na Bíblia, a passagem da Torre de Babel. Segundo a bíblia a Torre de Babel foi o segundo maior projeto de engenharia da humanidade, antecedido pela Arca de Noé, porém foi também o primeiro fiasco da engenharia, e o que ocorreu para ser esse fiasco?&lt;/p&gt;</description>
+        <description>O que é ser um Tech Product Manager? De Entregas Técnicas a Capacidades de Negócio</description>
+      
+    </item>
+    
+    <item>
+      <title>QAOps e Pensamento Sistêmico: O Novo Padrão da Engenharia de Qualidade</title>
+      <link>https://jfilhogn.github.io/posts/qaops-e-pensamento-sistemico-o-novo-padrao-da-engenharia-de-qualidade/</link>
+      <pubDate>Mon, 21 Sep 2026 20:59:12 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/qaops-e-pensamento-sistemico-o-novo-padrao-da-engenharia-de-qualidade/</guid>
+      
+        <description>Olá pessoal, vamos de mais um artigo voltado para Inteligência Artificial.</description>
+      
+    </item>
+    
+    <item>
+      <title>QAOps Agents: Orquestrando a Qualidade</title>
+      <link>https://jfilhogn.github.io/posts/qaops-agents-orquestrando-a-qualidade/</link>
+      <pubDate>Sun, 13 Sep 2026 18:16:01 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/qaops-agents-orquestrando-a-qualidade/</guid>
+      
+        <description>Olá, pessoal, bora de mais uma publicação!</description>
+      
+    </item>
+    
+    <item>
+      <title>Refatorando a Democracia: O Voto em Perspectiva para 2026</title>
+      <link>https://jfilhogn.github.io/posts/refatorando-a-democracia-o-voto-em-perspectiva-para-2026/</link>
+      <pubDate>Sun, 30 Aug 2026 12:43:20 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/refatorando-a-democracia-o-voto-em-perspectiva-para-2026/</guid>
+      
+        <description>Olá, pessoal! Depois de algum tempo, apareço no Medium novamente para escrever um artigo. Trago um texto um pouco diferente desta vez…</description>
       
     </item>
     
     <item>
       <title>Bem Vindo</title>
-      <link>http://localhost:1313/posts/bem-vindo/</link>
+      <link>https://jfilhogn.github.io/posts/bem-vindo/</link>
       <pubDate>Fri, 30 May 2025 19:44:19 -0300</pubDate>
       
-      <guid>http://localhost:1313/posts/bem-vindo/</guid>
+      <guid>https://jfilhogn.github.io/posts/bem-vindo/</guid>
       
         <description>&lt;p&gt;Olá, seja bem-vindo ao meu blog!
 Este é um espaço onde compartilho minhas ideias, projetos e aprendizados. Espero que você encontre aqui conteúdos interessantes e inspiradores voltados para tecnologia, programação e desenvolvimento pessoal.&lt;/p&gt;
 &lt;p&gt;Anteriormente eu escrevia no Substack, mas decidi migrar para este novo espaço. Aqui, pretendo trazer uma abordagem mais pessoal e direta, compartilhando não apenas artigos técnicos, mas também reflexões sobre minha jornada na área de tecnologia.&lt;/p&gt;
 &lt;p&gt;Mas antes de tudo, tenho que me apresentar certo? Então, aqui vai:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>OKRs para Evolução de Carreira</title>
+      <link>https://jfilhogn.github.io/posts/okrs-para-evolucao-de-carreira/</link>
+      <pubDate>Mon, 10 Mar 2025 11:02:30 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/okrs-para-evolucao-de-carreira/</guid>
+      
+        <description>A aproximadamente um ano escrevi um artigo sobre OKRs e Evolução da Qualidade de Software aqui no Medium. O foco deste primeiro artigo…</description>
+      
+    </item>
+    
+    <item>
+      <title>Linguagem de Programação Júlia</title>
+      <link>https://jfilhogn.github.io/posts/linguagem-de-programacao-julia/</link>
+      <pubDate>Sat, 01 Feb 2025 19:16:00 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/linguagem-de-programacao-julia/</guid>
+      
+        <description>Há alguns dias escrevi a respeito da ferramenta de testes de performance que criei chamada Stressify.jl. Após a escrita deste artigo muitos…</description>
+      
+    </item>
+    
+    <item>
+      <title>Stressify.jl Performance Testing</title>
+      <link>https://jfilhogn.github.io/posts/stressify-jl-performance-testing/</link>
+      <pubDate>Mon, 16 Dec 2024 14:35:10 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/stressify-jl-performance-testing/</guid>
+      
+        <description>Framework to create Performance Testing in Julia Lang.</description>
+      
+    </item>
+    
+    <item>
+      <title>Continuos Performance Testing</title>
+      <link>https://jfilhogn.github.io/posts/continuos-performance-testing/</link>
+      <pubDate>Sat, 19 Oct 2024 17:52:26 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/continuos-performance-testing/</guid>
+      
+        <description>Bom, bem provável que você já tem ouvido em uma empresa, nos estudos ou até mesmo aqui no medium a respeito de DevOps e como essa cultura…</description>
+      
+    </item>
+    
+    <item>
+      <title>Quais são os tipos de teste de performance?</title>
+      <link>https://jfilhogn.github.io/posts/quais-sao-os-tipos-de-teste-de-performance/</link>
+      <pubDate>Mon, 03 Jun 2024 13:01:25 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/quais-sao-os-tipos-de-teste-de-performance/</guid>
+      
+        <description>Algum tempo atrás conhecemos um pouco de teste de performance, no primeiro texto trouxe um pouco das terminologias que temos de conhecer…</description>
+      
+    </item>
+    
+    <item>
+      <title>Débito Técnico e a perca de produtividade.</title>
+      <link>https://jfilhogn.github.io/posts/debito-tecnico-e-a-perca-de-produtividade/</link>
+      <pubDate>Fri, 24 May 2024 14:02:08 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/debito-tecnico-e-a-perca-de-produtividade/</guid>
+      
+        <description>Pesquisando uma imagem para a capa do tema de hoje encontrei essa de Luke Chesser na qual mostra um gráfico em queda. Talvez o contexto do…</description>
+      
+    </item>
+    
+    <item>
+      <title>O papel do Estado falhou?</title>
+      <link>https://jfilhogn.github.io/posts/o-papel-do-estado-falhou/</link>
+      <pubDate>Tue, 07 May 2024 12:29:27 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/o-papel-do-estado-falhou/</guid>
+      
+        <description>Hoje começo meus artigos do medium de uma forma diferente. Utilizo o medium para compartilhar conhecimento a respeito de tecnologia e…</description>
+      
+    </item>
+    
+    <item>
+      <title>Débito Técnico em automações de teste de software.</title>
+      <link>https://jfilhogn.github.io/posts/debito-tecnico-em-automacoes-de-teste-de-software/</link>
+      <pubDate>Mon, 29 Apr 2024 13:02:19 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/debito-tecnico-em-automacoes-de-teste-de-software/</guid>
+      
+        <description>Uma das maiores lutas de um time de Qualidade, principalmente pelo QA é a priorização dos débitos técnicos por parte do time de engenharia…</description>
+      
+    </item>
+    
+    <item>
+      <title>Planejamento com Diagrama de GANTT</title>
+      <link>https://jfilhogn.github.io/posts/planejamento-com-diagrama-de-gantt/</link>
+      <pubDate>Mon, 15 Apr 2024 13:01:54 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/planejamento-com-diagrama-de-gantt/</guid>
+      
+        <description>No artigo Estratégia de Estudo conhecemos estratégias de estudo na qual vimos um pouco sobre rotina, pomodoro, usos de roadmap, mas você…</description>
+      
+    </item>
+    
+    <item>
+      <title>Terminologias de Teste de Performance que todo QA deve conhecer</title>
+      <link>https://jfilhogn.github.io/posts/terminologias-de-teste-de-performance-que-todo-qa-deve-conhecer/</link>
+      <pubDate>Tue, 02 Apr 2024 11:01:58 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/terminologias-de-teste-de-performance-que-todo-qa-deve-conhecer/</guid>
+      
+        <description>Dia após dia percebemos o quão o mundo está rápido e volátil, em mudança constante, onde o tempo de resposta de uma aplicação faz todo o…</description>
+      
+    </item>
+    
+    <item>
+      <title>Atuação do QA no TDD</title>
+      <link>https://jfilhogn.github.io/posts/atuacao-do-qa-no-tdd/</link>
+      <pubDate>Mon, 11 Mar 2024 13:02:13 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/atuacao-do-qa-no-tdd/</guid>
+      
+        <description>Como já conhecemos a jornada como QA e Tester se modificou ao longo do tempo, saindo do tester de mainframe, até os dias atuais com testes…</description>
+      
+    </item>
+    
+    <item>
+      <title>Como posso aperfeiçoar minha escrita?</title>
+      <link>https://jfilhogn.github.io/posts/como-posso-aperfeicoar-minha-escrita/</link>
+      <pubDate>Wed, 14 Feb 2024 13:01:51 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/como-posso-aperfeicoar-minha-escrita/</guid>
+      
+        <description>Desde pequeno a leitura faz parte da minha vida, me recordo dos primeiros quadrinhos que meu pai me deu e como aquelas aventuras de Batman…</description>
+      
+    </item>
+    
+    <item>
+      <title>OKRs e Evolução da Qualidade de Software</title>
+      <link>https://jfilhogn.github.io/posts/okrs-e-evolucao-da-qualidade-de-software/</link>
+      <pubDate>Wed, 07 Feb 2024 14:01:26 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/okrs-e-evolucao-da-qualidade-de-software/</guid>
+      
+        <description>Todo final de ano e começo, as empresas utilizam de uma boa parte do tempo para realizar o planejamento estratégico. Esse planejamento…</description>
+      
+    </item>
+    
+    <item>
+      <title>QA e DORA Métrics</title>
+      <link>https://jfilhogn.github.io/posts/qa-e-dora-metrics/</link>
+      <pubDate>Fri, 02 Feb 2024 13:01:45 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/qa-e-dora-metrics/</guid>
+      
+        <description>As aplicações que utilizamos atualmente sempre estão em evolução, ambientes cada vez mais complexos e com regras de negócios rígidas fazem…</description>
+      
+    </item>
+    
+    <item>
+      <title>Estratégias de Estudo</title>
+      <link>https://jfilhogn.github.io/posts/estrategias-de-estudo/</link>
+      <pubDate>Mon, 15 Jan 2024 13:01:42 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/estrategias-de-estudo/</guid>
+      
+        <description>Desde pequeno escutamos de nossos pais que o estudo é o caminho para nosso crescimento profissional e também para ter o emprego dos sonhos…</description>
+      
+    </item>
+    
+    <item>
+      <title>Livros lidos em 2023</title>
+      <link>https://jfilhogn.github.io/posts/livros-lidos-em-2023/</link>
+      <pubDate>Wed, 10 Jan 2024 15:01:47 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/livros-lidos-em-2023/</guid>
+      
+        <description>Arte da Guerra</description>
+      
+    </item>
+    
+    <item>
+      <title>Retrospectiva Tecnologia e Qualidade de software P. II</title>
+      <link>https://jfilhogn.github.io/posts/retrospectiva-tecnologia-e-qualidade-de-software-p-ii/</link>
+      <pubDate>Thu, 04 Jan 2024 11:03:35 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/retrospectiva-tecnologia-e-qualidade-de-software-p-ii/</guid>
+      
+        <description>Na semana passada vimos sobre a retrospectiva do ano de 2023 com foco em tecnologia, quem não viu segue o texto. Nessa semana iremos ver o…</description>
+      
+    </item>
+    
+    <item>
+      <title>Retrospectiva Tecnologia e Qualidade de software P. I</title>
+      <link>https://jfilhogn.github.io/posts/retrospectiva-tecnologia-e-qualidade-de-software-p-i/</link>
+      <pubDate>Fri, 22 Dec 2023 13:01:36 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/retrospectiva-tecnologia-e-qualidade-de-software-p-i/</guid>
+      
+        <description>Sempre no final do ano paramos um momento para refletir sobre o que passou no ano e analisar o que poderá acontecer para o próximo ano. Nós…</description>
+      
+    </item>
+    
+    <item>
+      <title>Coletânea Uncle Bob — P.III</title>
+      <link>https://jfilhogn.github.io/posts/coletanea-uncle-bob-p-iii/</link>
+      <pubDate>Wed, 08 Nov 2023 12:50:21 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/coletanea-uncle-bob-p-iii/</guid>
+      
+        <description>Há algumas semanas estamos vendo conteúdo sobre Uncle Bob (caso você tenha perdido segue a parte I e parte II 😊), hoje iremos dar…</description>
+      
+    </item>
+    
+    <item>
+      <title>Coletânea Uncle Bob — P.II</title>
+      <link>https://jfilhogn.github.io/posts/coletanea-uncle-bob-p-ii/</link>
+      <pubDate>Fri, 20 Oct 2023 00:11:42 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/coletanea-uncle-bob-p-ii/</guid>
+      
+        <description>Dias atrás comecei a série de conteúdos voltados a Uncle Bob (caso você tenha perdido segue o link 😊), na primeira parte vimos sobre o…</description>
+      
+    </item>
+    
+    <item>
+      <title>Coletânea Uncle Bob — O Codificador Limpo</title>
+      <link>https://jfilhogn.github.io/posts/coletanea-uncle-bob-o-codificador-limpo/</link>
+      <pubDate>Fri, 29 Sep 2023 10:04:32 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/coletanea-uncle-bob-o-codificador-limpo/</guid>
+      
+        <description>Aqui no médium costumo publicar textos com cunho mais técnico e também de livros das mais determinadas categorias, essa semana pensei em…</description>
+      
+    </item>
+    
+    <item>
+      <title>Terraform &#43; AWS e Github Actions</title>
+      <link>https://jfilhogn.github.io/posts/terraform-aws-e-github-actions/</link>
+      <pubDate>Thu, 03 Aug 2023 21:20:57 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/terraform-aws-e-github-actions/</guid>
+      
+        <description>Com o passar dos anos mais o profissional de Qualidade de Software necessita de conhecimento sobre diversas partes do desenvolvimento de…</description>
+      
+    </item>
+    
+    <item>
+      <title>Hábitos para ter sucesso como QA</title>
+      <link>https://jfilhogn.github.io/posts/habitos-para-ter-sucesso-como-qa/</link>
+      <pubDate>Tue, 11 Jul 2023 00:46:45 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/habitos-para-ter-sucesso-como-qa/</guid>
+      
+        <description>Um dos maiores dilemas de um Analista/Engenheiro de Qualidade de Software é se libertar do famoso “só testa”, essa visão desatualizada do…</description>
+      
+    </item>
+    
+    <item>
+      <title>Pipeline Cypress Gitlab</title>
+      <link>https://jfilhogn.github.io/posts/pipeline-cypress-gitlab/</link>
+      <pubDate>Sat, 29 Apr 2023 03:20:22 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/pipeline-cypress-gitlab/</guid>
+      
+        <description>Esse tutorial tem como objetivo mostrar de maneira básica como se criar uma pipeline para o sistema de armazenamento de código Gitlab.</description>
+      
+    </item>
+    
+    <item>
+      <title>Comunicação e Desenvolvimento de Software</title>
+      <link>https://jfilhogn.github.io/posts/comunicacao-e-desenvolvimento-de-software/</link>
+      <pubDate>Wed, 26 Apr 2023 02:07:54 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/comunicacao-e-desenvolvimento-de-software/</guid>
+      
+        <description>Desde os primórdios a comunicação é a base para qualquer criação humana, bem como para o desenvolvimento da sociedade que temos atualmente…</description>
+      
+    </item>
+    
+    <item>
+      <title>Livros de liderança Qualidade de Software</title>
+      <link>https://jfilhogn.github.io/posts/livros-de-lideranca-qualidade-de-software/</link>
+      <pubDate>Sat, 25 Feb 2023 03:05:09 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/livros-de-lideranca-qualidade-de-software/</guid>
+      
+        <description>Desde pequeno fui entusiasta que a leitura é a base de qualquer escolha profissional e pessoal, nesse sentido, sempre me espelhei em livros…</description>
+      
+    </item>
+    
+    <item>
+      <title>Prática de Code Review e Qualidade de Software</title>
+      <link>https://jfilhogn.github.io/posts/pratica-de-code-review-e-qualidade-de-software/</link>
+      <pubDate>Wed, 04 Jan 2023 23:01:57 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/pratica-de-code-review-e-qualidade-de-software/</guid>
+      
+        <description>Sempre que falamos de Qualidade de Software, logo pensamos em um conjunto de práticas que visa uma entrega de software contendo…</description>
+      
+    </item>
+    
+    <item>
+      <title>Livros lidos em 2022</title>
+      <link>https://jfilhogn.github.io/posts/livros-lidos-em-2022/</link>
+      <pubDate>Fri, 30 Dec 2022 19:34:43 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/livros-lidos-em-2022/</guid>
+      
+        <description>Sempre que aproxima o final do ano, aparece as reflexões de como foi o ano que esta terminando, esse ano de 2022 em questão de livros foram…</description>
+      
+    </item>
+    
+    <item>
+      <title>O que é QAOps?</title>
+      <link>https://jfilhogn.github.io/posts/o-que-e-qaops/</link>
+      <pubDate>Fri, 30 Dec 2022 00:39:23 +0000</pubDate>
+      
+      <guid>https://jfilhogn.github.io/posts/o-que-e-qaops/</guid>
+      
+        <description>“Será possível ter uma cultura onde as pessoas têm coragem de falar a verdade quando erram para ajudar os times a resolver mais rápido os…</description>
       
     </item>
     

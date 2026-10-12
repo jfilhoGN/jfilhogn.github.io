@@ -1,0 +1,365 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    
+        |
+        Terraform &#43; AWS e Github Actions
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="" />
+  <meta
+    name="description"
+    content="Com o passar dos anos mais o profissional de Qualidade de Software necessita de conhecimento sobre diversas partes do desenvolvimento de…"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.7a694fa58e76745d737e69fb2356353688d4883a950ee2882166c7b4e924ca24.css" integrity="sha256-emlPpY52dF1zfmn7I1Y1NojUiDqVDuKIIWbHtOkkyiQ=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://jfilhogn.github.io/posts/terraform-aws-e-github-actions/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Terraform &#43; AWS e Github Actions">
+  <meta name="twitter:description" content="Com o passar dos anos mais o profissional de Qualidade de Software necessita de conhecimento sobre diversas partes do desenvolvimento de…">
+
+
+
+  
+  <meta property="og:url" content="https://jfilhogn.github.io/posts/terraform-aws-e-github-actions/">
+  <meta property="og:site_name" content="Blog - João Martins Filho">
+  <meta property="og:title" content="Terraform &#43; AWS e Github Actions">
+  <meta property="og:description" content="Com o passar dos anos mais o profissional de Qualidade de Software necessita de conhecimento sobre diversas partes do desenvolvimento de…">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-08-03T21:20:57+00:00">
+    <meta property="article:modified_time" content="2023-08-03T21:20:57+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Terraform \u002b AWS e Github Actions",
+        "headline": "Terraform \u002b AWS e Github Actions",
+        "alternativeHeadline": "",
+        "description": "
+      Com o passar dos anos mais o profissional de Qualidade de Software necessita de conhecimento sobre diversas partes do desenvolvimento de…
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/jfilhogn.github.io\/posts\/terraform-aws-e-github-actions\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "dateCreated": "2023-08-03T21:20:57.90Z",
+        "datePublished": "2023-08-03T21:20:57.90Z",
+        "dateModified": "2023-08-03T21:20:57.90Z",
+        "publisher":{
+            "@type":"Organization",
+            "name":  null ,
+            "url": "https://jfilhogn.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/jfilhogn.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/jfilhogn.github.io\/posts\/terraform-aws-e-github-actions\/",
+        "wordCount" : "870",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/IMG-0019.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Terraform &#43; AWS E Github Actions</h1>
+      
+      <p><img src="/images/posts/terraform-aws-e-github-actions/image-01.jpg" alt=""></p>
+<p>Com o passar dos anos mais o profissional de Qualidade de Software necessita de conhecimento sobre diversas partes do desenvolvimento de software, esse conhecimento vai além de conhecimento do produto, camadas de código e divisão arquitetural para questões mais técnicas de infra estrutura, esteiras de CI/CD e <em>microsserviços</em>. Um desses avanços de CI/CD e <em>microsserviços</em> é o conceito de infraestrutura como código (IaC).</p>
+<p>Hoje nesse advento há muitas ferramentas (segue alguns nas referências <a href="https://digital.ai/learn/devops-periodic-table/">Tabela Periódica DevOps</a>), hoje o que iremos conhecer é o <em>Terraform</em> que integrado com <em>AWS</em> e <em>Github Actions</em> faz com que você levante uma infraestrutura de maneira automática em poucos minutos.</p>
+<h4 id="terraform">Terraform</h4>
+<p><img src="/images/posts/terraform-aws-e-github-actions/image-02.png" alt=""></p>
+<p><em>Terraform</em> é uma ferramenta de código aberto desenvolvida pela <em>HashiCorp</em> para automação de infraestrutura. Ele permite que os engenheiros de software provisionem e gerenciem recursos de infraestrutura como código, usando uma linguagem declarativa. Com o <em>Terraform</em>, é possível definir a infraestrutura desejada em um arquivo de configuração, descrevendo os recursos e suas configurações. Ao executar o <em>Terraform</em>, ele cria, atualiza ou destrói os recursos necessários para atingir o estado desejado, fornecendo um ambiente previsível e consistente para a infraestrutura. Essa abordagem facilita a implantação e o gerenciamento de infraestrutura em nuvens públicas, privadas ou híbridas.</p>
+<p>Seus principais benefícios são:</p>
+<ol>
+<li><strong>Infraestrutura como código:</strong> O <em>Terraform</em> permite que a infraestrutura seja definida e gerenciada como código, o que traz os benefícios de controle de versão, reprodutibilidade e colaboração. Isso torna mais fácil rastrear e auditar as alterações na infraestrutura, além de facilitar a automação e o gerenciamento em escala.</li>
+<li><strong>Planos e validações:</strong> Antes de fazer qualquer alteração na infraestrutura, o <em>Terraform</em> permite que você visualize um plano de execução que mostra quais recursos serão criados, atualizados ou destruídos. Isso ajuda a evitar alterações indesejadas e a validar as configurações antes de aplicá-las.</li>
+<li><strong>Escalabilidade e reutilização:</strong> O <em>Terraform</em> permite que você crie módulos reutilizáveis, o que facilita a criação de padrões e componentes de infraestrutura comuns. Isso torna a gestão de infraestrutura mais escalável e padronizada, promovendo a consistência entre projetos e equipes.</li>
+<li><strong>Provisionamento e gerenciamento de recursos:</strong> Com o <em>Terraform</em>, é possível provisionar e gerenciar recursos de infraestrutura em várias nuvens e provedores, como AWS, Azure, Google Cloud, entre outros. Isso permite que as equipes de desenvolvimento e operações adotem uma abordagem multi-cloud ou híbrida, sem precisar aprender várias ferramentas específicas de cada provedor.</li>
+</ol>
+<h4 id="aws">AWS</h4>
+<p><img src="/images/posts/terraform-aws-e-github-actions/image-03.png" alt=""></p>
+<p>A AWS (<em>Amazon Web Services</em>) é uma plataforma de serviços de computação em nuvem oferecida pela Amazon. Ela fornece uma ampla gama de serviços, incluindo armazenamento, computação, banco de dados, rede e muito mais. Com a AWS, as empresas podem implantar e dimensionar recursos de TI de forma rápida e flexível, sem precisar investir em hardware físico. A AWS oferece alta disponibilidade, segurança, escalabilidade e recursos de gerenciamento avançados, permitindo que as organizações desenvolvam e executem aplicativos com eficiência na nuvem. Atualmente a AWS detém o mercado de aproximadamente 32% da nuvem de todo o mundo.</p>
+<p><img src="/images/posts/terraform-aws-e-github-actions/image-04.jpg" alt="Fonte: Canalys"></p>
+<p>Fonte: <a href="https://www.canalys.com/newsroom/global-cloud-services-Q4-2022">Canalys</a></p>
+<h4 id="principais-serviços">Principais Serviços</h4>
+<p>Seus principais serviços são:</p>
+<ol>
+<li><strong>Amazon EC2 (Elastic Compute Cloud):</strong> É um serviço de computação em nuvem que oferece capacidade de computação redimensionável na nuvem. Os usuários podem provisionar e gerenciar instâncias de servidores virtuais de acordo com suas necessidades.</li>
+<li><strong>Amazon S3 (Simple Storage Service):</strong> É um serviço de armazenamento de objetos altamente escalável e durável. Ele permite armazenar e recuperar grandes quantidades de dados, como arquivos, imagens e vídeos, de maneira segura.</li>
+<li><strong>Amazon RDS (Relational Database Service):</strong> É um serviço de banco de dados relacional gerenciado que oferece suporte a várias opções de banco de dados, como MySQL, PostgreSQL, Oracle, SQL Server e outros. Ele facilita a implantação, a escalabilidade e a administração de bancos de dados.</li>
+<li><strong>Amazon Lambda:</strong> É um serviço de computação sem servidor que permite executar código de forma escalável e automatizada, sem a necessidade de provisionar ou gerenciar servidores. É ideal para executar tarefas e responder a eventos de forma rápida.</li>
+</ol>
+<p>Para esse tutorial nosso foco será o provisionamento de um serviço EC2 com a utilização do <em>Terraform</em> para escrevermos toda nossa infraestrutura e o <em>Github Actions</em> para executar de maneira automática essa infra estrutura</p>
+<h4 id="github-actions">Github Actions</h4>
+<p><img src="/images/posts/terraform-aws-e-github-actions/image-05.png" alt=""></p>
+<p>O <em>GitHub Actions</em> é um serviço de automação contínua oferecido pelo <em>GitHub</em>. Ele permite automatizar fluxos de trabalho personalizados dentro do ciclo de desenvolvimento de software. Com o <em>GitHub Actions</em>, é possível criar <em>pipelines</em> automatizados para compilação, teste, implantação e outras tarefas relacionadas ao desenvolvimento de software.</p>
+<p>Os fluxos de trabalho do <em>GitHub Actions</em> são definidos em arquivos YAML, que descrevem as etapas a serem executadas, os gatilhos que iniciam o fluxo de trabalho e as dependências entre as etapas. Esses fluxos de trabalho podem ser acionados por eventos, como push de código, criação de <em>pull request</em>, criação de tags ou qualquer outro evento configurável.</p>
+<h4 id="implementação-nogithub">Implementação no Github</h4>
+<p>Para um melhor entendimento do código toda a explicação dos detalhes do código e implementação estão escritas no README do projeto que se encontra no <a href="https://github.com/jfilhoGN/terraform-githubactions-aws">Github</a>, bem como você pode visualizar o <em>actions</em> em utilização neste <a href="https://github.com/jfilhoGN/terraform-githubactions-aws/actions">link</a>.</p>
+<p>Caso possua alguma dúvida pode me contactar pelo email ou nos comentários abaixo :), o conceito desse artigo é auxiliar os profissionais QAs terem um conhecimento de áreas dentro do desenvolvimento de código.</p>
+<p>Grande abraço e obrigado!</p>
+<h4 id="referências">Referências</h4>
+<ul>
+<li><a href="https://www.terraform.io/">Terraform</a></li>
+<li><a href="https://aws.amazon.com/what-is-aws/?nc2=h_ql_le_int">AWS</a></li>
+<li><a href="https://docs.github.com/en/actions">Github Actions</a></li>
+<li><a href="https://www.canalys.com/newsroom/global-cloud-services-Q4-2022">Canalys</a></li>
+<li><a href="https://digital.ai/learn/devops-periodic-table/">Tabela Periódica DevOps</a></li>
+</ul>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

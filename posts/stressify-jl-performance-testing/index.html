@@ -1,0 +1,445 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    
+        |
+        Stressify.jl Performance Testing
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="" />
+  <meta
+    name="description"
+    content="Framework to create Performance Testing in Julia Lang."
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.7a694fa58e76745d737e69fb2356353688d4883a950ee2882166c7b4e924ca24.css" integrity="sha256-emlPpY52dF1zfmn7I1Y1NojUiDqVDuKIIWbHtOkkyiQ=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://jfilhogn.github.io/posts/stressify-jl-performance-testing/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Stressify.jl Performance Testing">
+  <meta name="twitter:description" content="Framework to create Performance Testing in Julia Lang.">
+
+
+
+  
+  <meta property="og:url" content="https://jfilhogn.github.io/posts/stressify-jl-performance-testing/">
+  <meta property="og:site_name" content="Blog - João Martins Filho">
+  <meta property="og:title" content="Stressify.jl Performance Testing">
+  <meta property="og:description" content="Framework to create Performance Testing in Julia Lang.">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-16T14:35:10+00:00">
+    <meta property="article:modified_time" content="2024-12-16T14:35:10+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Stressify.jl Performance Testing",
+        "headline": "Stressify.jl Performance Testing",
+        "alternativeHeadline": "",
+        "description": "
+      Framework to create Performance Testing in Julia Lang.
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/jfilhogn.github.io\/posts\/stressify-jl-performance-testing\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "dateCreated": "2024-12-16T14:35:10.81Z",
+        "datePublished": "2024-12-16T14:35:10.81Z",
+        "dateModified": "2024-12-16T14:35:10.81Z",
+        "publisher":{
+            "@type":"Organization",
+            "name":  null ,
+            "url": "https://jfilhogn.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/jfilhogn.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/jfilhogn.github.io\/posts\/stressify-jl-performance-testing\/",
+        "wordCount" : "1566",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/IMG-0019.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Stressify.jl Performance Testing</h1>
+      
+      <p><img src="/images/posts/stressify-jl-performance-testing/image-01.png" alt=""></p>
+<h4 id="introdução">Introdução</h4>
+<p>Há aproximadamente dois anos atuo como QA Especialista no Grupo Casas Bahia exclusivamente voltado para Testes de Performance, a fim de garantir que a performance das aplicações da empresas estejam aptas para receber um fluxo alto de usuários e que a usabilidade da aplicação não seja prejudicada.</p>
+<p>Durante essa minha jornada (desde outras empresas atuando como QA) atuei com várias ferramentas de teste de performance, como exemplo, JMeter, Gatling, Locust e K6, percebendo sempre prós e contras de todas essas ferramentas, como sabemos dentro da área de desenvolvimento de software não temos uma bala de prata, então cada ferramenta se adapta melhor as necessidades daquele projeto ou empresa.</p>
+<p>Bom, após um tempo atuando na ferramenta K6, comecei a participar mais atuante da comunidade do Grafana K6 (recomendo a todos que tenham domínio de uma determinada ferramenta, faça isso), pois, além de estar aprendendo mais ainda com perguntas interessantes, você estará auxiliando outros profissionais com sua experiência.</p>
+<p>Nessa comunidade comecei a perceber que um dos grandes pontos que os profissionais QAs ou de outras áreas procuravam, eram formas de gerar dados a partir de execução do teste, saindo daqueles resultados normais como <em>trhoughput requests</em>, <em>response time</em>, <em>errors requests</em> e voltando para dados estatísticos como média, mediana, P(90), P(95), desvio padrão e etc. Assim me veio a determinada idéia, como posso criar uma ferramenta de testes de performance que além de ser performática em sua execução consiga trazer mais insights estatísticos para o profissional, bem como, dando liberdade a partir da linguagem de gerar novas métricas, assim surgiu o Stressify.jl que é o tema deste texto de hoje.</p>
+<h4 id="linguagem-de-programação-julia">Linguagem de Programação Julia</h4>
+<p>Pós a introdução me veio em mente explicar, por que a linguagem de programação Julia?</p>
+<p>A linguagem Julia apareceu para mim no ano de 2016 em uma iniciação científica na Universidade Tecnológica Federal do Paraná, na qual nosso objetivo era mitigar a utilização de ferramentas open source para cálculos numéricos e científicos e durante a iniciação percebi o quão poderosa é a linguagem.</p>
+<p>Julia foi criada por Jeff Bezanson, Stefan Karpinski, Viral B. Shah e Alan Edelman, e lançada publicamente em 2012. O principal objetivo de Julia é combinar a facilidade de uso de linguagens como Python e R com a performance de linguagens de baixo nível como C e Fortran. Ela é especialmente popular na comunidade científica devido à sua capacidade de lidar com grandes volumes de dados e cálculos complexos de maneira eficiente.</p>
+<p><strong>Características Principais:</strong></p>
+<ul>
+<li><strong>Performance:</strong> Julia é compilada just-in-time (JIT), o que significa que o código é compilado em tempo de execução, permitindo uma performance próxima à de linguagens compiladas estáticas.</li>
+<li><strong>Facilidade de Uso:</strong> A sintaxe de Julia é clara e expressiva, tornando-a acessível para programadores de diferentes níveis de experiência.</li>
+<li><strong>Paralelismo e Concorrência:</strong> Julia tem suporte nativo para programação paralela e concorrente, facilitando a utilização de múltiplos núcleos de CPU ou até mesmo de GPUs.</li>
+<li><strong>Sistema de Tipos Dinâmico:</strong> Apesar de ser dinâmica, Julia permite a declaração opcional de tipos, o que pode aumentar a performance quando necessário.</li>
+<li><strong>Ecossistema de Pacotes:</strong> Julia tem um gerenciador de pacotes robusto chamado <code>Pkg</code>, com uma ampla variedade de pacotes para diversas aplicações, especialmente em ciência de dados, estatística, e machine learning.</li>
+</ul>
+<p>Agora que apresentei um pouco mais da linguagem de Programação Júlia e o porque de sua utilização vou mostrar como usar a ferramenta Stressify.jl</p>
+<h4 id="como-usar-o-stressifyjl">Como usar o Stressify.jl?</h4>
+<p>O primeiro ponto que trago a vocês que o foco da ferramenta foi ser de simples instalação, desenvolvimento, execução e geração de report.</p>
+<h4 id="instalação">Instalação</h4>
+<p>Como dito na parte da linguagem Júlia sobre o ecossistemas de pacotes, a Julia contém uma comunidade atuante e democrática, facilitando a criação dos pacotes e utilização, desta forma, para o Stressify o que você precisa é:</p>
+<ol>
+<li>Instalação da linguagem <a href="https://julialang.org/downloads/">Julia</a>: A documentação é muito clara e a linguagem possui para todos os sistemas operacionais, desde Linux até Windows, no link acima coloquei a parte de como fazer o download e instalação.</li>
+<li>Após instalado a linguagem Julia crie uma pasta onde irá adicionar seus scripts de teste e no terminal digite o comando <code>julia</code>, assim você estará acessando a parte de interpretação da linguagem, seu terminal ficara parecido com isto:</li>
+</ol>
+<p> </p>
+<pre><code>_
+   __ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type &quot;?&quot; for help, &quot;]?&quot; for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.11.2 (2024-12-01)
+ _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
+|__/                   |
+
+julia&gt;
+</code></pre>
+<ol>
+<li>Dentro do REPL da linguagem Julia digite <code>using Pkg</code> e depois <code>Pkg.add(&quot;Stressify&quot;)</code> aguarde alguns minutos que estará instalado a ferramenta.</li>
+<li>Agora vamos desenvolver os scripts!</li>
+</ol>
+<h4 id="usando-docker">Usando Docker</h4>
+<p>Caso você possua domínio do Docker e tenha instalado em sua máquina é mais simples ainda, basta executar o comando <code>docker pull jfilhogn/stressify:latest</code> que estará baixando a imagem oficial da ferramenta Stressify. Após baixado e dentro do diretório que você desenvolveu os scripts que será explicando no tópico abaixo execute o comando <code>docker run --rm jfilhogn/stressify:latest seuscript.jl </code>, pronto estará executando seu teste!</p>
+<h4 id="criando-osscripts">Criando os scripts.</h4>
+<p>Para este texto irei apresentar um script básico para entendimento apresentando cada parte do código por tópicos. Inicialmente vamos importar a biblioteca.</p>
+<pre><code>using Stressify
+</code></pre>
+<p>Feito a importação da biblioteca vamos declarar os options, isto é, as configurações que queremos para o teste, como número de VUs, quantas iterações que irá executar ou se será por duração. Para este exemplo iremos usar iterações.</p>
+<pre><code>using Stressify
+
+Stressify.options(
+    vus = 5,
+    iterations = 10,
+    duration = nothing
+)
+</code></pre>
+<p>Então, no código acima declaramos para nosso teste que iremos executar o teste com 5 usuários simultâneos e cada VU irá iterar pelas requisições por 10 vezes, sendo assim o endpoint que estará sendo estressado receberá um total de 50 requisições.</p>
+<p>Feito a parte do options vamos realizar as chamadas para isto vamos fazer a seguinte parte de código.</p>
+<pre><code>using Stressify
+
+Stressify.options(
+    vus = 5,
+    iterations = 10,
+    duration = nothing
+)
+
+results = Stressify.run_test(
+    Stressify.http_get(&quot;https://httpbin.org/get&quot;),
+    Stressify.http_post(&quot;https://httpbin.org/post&quot;; payload=&quot;{\&quot;key\&quot;: \&quot;value\&quot;}&quot;, headers=Dict(&quot;Content-Type&quot; =&gt; &quot;application/json&quot;)),
+)
+</code></pre>
+<p>Declaramos uma variável <code>results</code>que receberá um dicionário com todos os resultados e métricas que o teste irá trazer e para receber essas informações usamos a função <code>run_test</code> que recebe dentro dela as requisições que serão feitas, sendo no exemplo uma requisição <code>GET</code> e <code>POST</code>. Seu primeiro script está pronto!</p>
+<p>Para executar o teste basta escrever no terminal o comando <code>julia seuscript.jl</code> e a saída será muito próxima a isto:</p>
+<pre><code>================== Stressify ==================
+    VUs                    :          5
+    Iterações Totais       :         50
+    Taxa de Sucesso (%)    :      100.0
+    Taxa de Erros (%)      :        0.0
+    Requisições por Segundo:       8.79
+    Transações por Segundo :       8.79
+    Número de Erros        :          0
+
+---------- Métricas de Tempo (s) ----------
+    Tempo Mínimo           :     0.1744
+    Tempo Máximo           :     1.5394
+    Tempo Médio            :     0.4666
+    Mediana                :      0.394
+    P90                    :     0.8338
+    P95                    :     0.9099
+    P99                    :     1.5394
+    Desvio Padrão          :     0.2872
+
+---------- Detalhamento de Tempos ----------
+    Todos os Tempos (s)    : 1.3297, 0.3898, 0.5772, 0.5987, 0.5519, 0.3595, 0.1788, 0.3945, 0.1823, 0.3955, 0.8338, 0.8836, 0.1757, 0.7192, 0.5078, 0.3386, 0.6884, 0.3439, 0.1789, 0.3843, 1.5394, 0.3353, 0.1744, 0.4752, 0.2206, 0.3373, 0.6098, 0.3367, 0.1763, 0.7549, 0.9099, 0.389, 0.1791, 0.3985, 0.4764, 0.3511, 0.1815, 0.5019, 0.1785, 0.3935, 0.9097, 0.3951, 0.1823, 0.3905, 0.5544, 0.6412, 0.3959, 0.354, 0.1812, 0.3958
+==========================================================
+
+---------- Resultados dos Checks ----------
+</code></pre>
+<p>Aqui entra o ponto chave da ferramenta, a transparência de todos os resultados que tivemos durante a execução trazendo dados de tempo mínimo, máximo, médio, mediana, P90, P95, P99 e Desvio Padrão. Por fim traz um detalhamento de todos os tempos gerados e caso seu código tenha checks de response você irá ver também os resultados!</p>
+<p>Talvez você possa se perguntar, esse resultado é muito parecido com outras ferramentas de teste? Contudo o grande diferencial do Stressify é utilizar a linguagem Julia e ter nativo ferramentas estatísticas, suponha que você queira saber a variação destas requisições bastaria colocar essas três linhas de código.</p>
+<pre><code>using Statistics
+variancia = var(results[&quot;all_times&quot;])
+print(&quot;Variância: &quot;, variancia)
+</code></pre>
+<p>Então o grande foco da ferramenta é utilizar tudo que temos disponível da linguagem Júlia para geração de métricas de performance.</p>
+<p>A idéia do texto de hoje era trazer esse pontapé inicial de como utilizar a ferramenta Stressify, estou atuando diariamente para trazer mais melhorias para vocês, sendo os que estão mapeados para as próximas versões detalho no próximo tópico.</p>
+<h4 id="para-ofuturo">Para o futuro!</h4>
+<ul>
+<li><strong>Funil de Requisição:</strong> Um dos pontos principais do teste de performance é garantir que o teste siga o que aconteça na vida real e o funil de requisição é importantíssimo, sendo necessário para garantir que um endpoint X receba a porcentagem correta de requisições comparadas a requisição Y.</li>
+<li><strong>Live Dashboard:</strong> A linguagem Julia conta com excelentes ferramentas com o foco em dashboard e visão gráfica, para as próximas versões vou trazer um formato na qual a partir da execução você consiga ver uma visão gráfica da execução dos testes com um report.</li>
+<li><strong>Uso de GPUs:</strong> A linguagem possui integração com GPU e nesse sentido nada mais interessante utilizarmos VUs de GPU para cada requisição.</li>
+</ul>
+<p>E mais novidades a caminho!</p>
+<p>É isso pessoal, este primeiro artigo venho trazer sobre essa novidade e aguardo de vocês comentários de como utilizou, por fim caso tenha gostado do artigo deem um Star no Github, ajuda e muito no discernimento da ferramenta dentro dos pacotes Júlia. Logo abaixo trago os links mais importantes juntamente com a documentação da ferramenta.</p>
+<h4 id="links-importantes">Links Importantes</h4>
+<ul>
+<li><a href="https://github.com/jfilhoGN/Stressify.jl">Github Oficial</a>;</li>
+<li><a href="https://stressifyjl.readthedocs.io/en/latest/">Documentação Oficial</a>;</li>
+<li><a href="https://app.gitter.im/#/room/#stressify:gitter.im">Comunidade</a></li>
+<li><a href="https://x.com/Stressifyjl">Rede Social X</a></li>
+</ul>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

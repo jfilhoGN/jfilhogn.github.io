@@ -1,0 +1,395 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    
+        |
+        Atuação do QA no TDD
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="" />
+  <meta
+    name="description"
+    content="Como já conhecemos a jornada como QA e Tester se modificou ao longo do tempo, saindo do tester de mainframe, até os dias atuais com testes…"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.7a694fa58e76745d737e69fb2356353688d4883a950ee2882166c7b4e924ca24.css" integrity="sha256-emlPpY52dF1zfmn7I1Y1NojUiDqVDuKIIWbHtOkkyiQ=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://jfilhogn.github.io/posts/atuacao-do-qa-no-tdd/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Atuação do QA no TDD">
+  <meta name="twitter:description" content="Como já conhecemos a jornada como QA e Tester se modificou ao longo do tempo, saindo do tester de mainframe, até os dias atuais com testes…">
+
+
+
+  
+  <meta property="og:url" content="https://jfilhogn.github.io/posts/atuacao-do-qa-no-tdd/">
+  <meta property="og:site_name" content="Blog - João Martins Filho">
+  <meta property="og:title" content="Atuação do QA no TDD">
+  <meta property="og:description" content="Como já conhecemos a jornada como QA e Tester se modificou ao longo do tempo, saindo do tester de mainframe, até os dias atuais com testes…">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-11T13:02:13+00:00">
+    <meta property="article:modified_time" content="2024-03-11T13:02:13+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Atuação do QA no TDD",
+        "headline": "Atuação do QA no TDD",
+        "alternativeHeadline": "",
+        "description": "
+      Como já conhecemos a jornada como QA e Tester se modificou ao longo do tempo, saindo do tester de mainframe, até os dias atuais com testes…
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/jfilhogn.github.io\/posts\/atuacao-do-qa-no-tdd\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "dateCreated": "2024-03-11T13:02:13.27Z",
+        "datePublished": "2024-03-11T13:02:13.27Z",
+        "dateModified": "2024-03-11T13:02:13.27Z",
+        "publisher":{
+            "@type":"Organization",
+            "name":  null ,
+            "url": "https://jfilhogn.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/jfilhogn.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/jfilhogn.github.io\/posts\/atuacao-do-qa-no-tdd\/",
+        "wordCount" : "1676",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/IMG-0019.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Atuação Do QA No TDD</h1>
+      
+      <p>Como já conhecemos a jornada como QA e Tester se modificou ao longo do tempo, saindo do <em>tester</em> de mainframe, até os dias atuais com testes em <em>blockchain</em>, <em>IoT</em>, <em>shift</em> <em>left testing</em> e etc. O QA como todas as área dentro de TI não pode dar o luxo de aguardar as mudanças e deve sempre se atentar em todos os pontos do desenvolvimento de software.</p>
+<p>Partindo dessa premissa o QA utilizando do <em>shift left testing</em> deve sempre auxiliar o time a desenvolver primeiro uma cultura de qualidade e posteriormente estar auxiliando no desenvolvimento de software e aqui entra a importância do QA conhecer de TDD.</p>
+<h3 id="tdd">TDD</h3>
+<p>TDD, ou “Test-Driven Development” (Desenvolvimento Orientado por Testes), é uma abordagem na programação de software que enfatiza a criação de testes antes de escrever o código real de um programa. Seu foco é baseado em um ciclo na qual primeiro é desenvolvido o caso de teste para determinada parte do código, faça o código passar no teste e por fim <em>refatore</em>. A imagem abaixo traz um detalhamento desse ciclo.</p>
+<p><img src="/images/posts/atuacao-do-qa-no-tdd/image-01.png" alt="Imagem retirada do artigo TDD e seu significado"></p>
+<p>Imagem retirada do artigo <a href="https://coodesh.com/blog/candidates/metodologias/tdd-e-seu-significado-por-que-ele-ajuda-a-aumentar-a-sua-produtividade/">TDD e seu significado</a></p>
+<p>A partir da imagem podemos detalhar melhor o fluxo, baseado nas cores:</p>
+<ul>
+<li><strong>Vermelho:</strong> Primeiro, você cria um teste que descreve o comportamento que deseja que o seu código tenha. Esse teste geralmente falha no início, pois o código real ainda não foi escrito.</li>
+<li><strong>Azul:</strong> Em seguida, você escreve o código mínimo necessário para fazer o teste passar. Isso significa que você está implementando apenas o suficiente para que o teste seja bem-sucedido. Se nesse caso o teste falhar, você continua a ajustar o código até que o teste passe.</li>
+<li><strong>Verde:</strong> Depois que o teste passa, você pode <em>refatorar</em>, ou seja, melhorar o código sem alterar o comportamento observado. Isso ajuda a manter o código limpo e organizado.</li>
+</ul>
+<p>Bom, conhecemos um pouco do fluxo e parte principal do TDD que é seu ciclo de criação, execução e correção do código, e nesse momento você pode se perguntar, <em>“Por que o desenvolvedor não curte TDD?”</em>.</p>
+<p>Essa pergunta pessoal baseia-se muito na cultura de um time e de uma empresa, somos humanos e gostamos de costumes e rotinas, nesse sentido a maioria dos desenvolvedores (e me incluo nessa lista) aprendemos que primeiramente devemos desenvolver a determinada funcionalidade e posteriormente realizar os testes em específico, o TDD é uma mudança de <em>mindset</em> e que deve ser trabalhado em conjunto entre todos do time, caso você QA esteja nesse ponto de trazer o TDD para dentro do time trago alguns pontos que irá te auxiliar.</p>
+<ol>
+<li>O primeiro ponto é promover uma cultura de qualidade em toda a equipe. Faça com que todos compreendam que a prática do TDD não é apenas sobre escrever testes, mas sobre criar software mais robusto e confiável.</li>
+<li>Com o começo da implantação da cultura de qualidade use métricas de cobertura de testes para avaliar o quanto do seu código está sendo testado. Use ferramentas que possibilitem essa análise. Ainda dentro dessa camada crie desafios, para que o time encoraja para melhorar a qualidade dos testes e do código. Quem não gosta de ganhar um desafio? rsrs</li>
+<li>Usando esses desafios inclua a criação de testes como parte integrante do fluxo de trabalho de desenvolvimento. Isso significa que antes de escrever qualquer código de produção, os desenvolvedores devem criar testes que descrevam o comportamento desejado. Aqui você pode usar os ritos para alinhar quais os testes, os testes são uma documentação viva que auxilia todos no entendimento do código.</li>
+<li>Participe dos <em>pair-programming</em> e torne os testes parte do processo de revisão de código. Garanta que os testes sejam de alta qualidade e abrangentes, e que os desenvolvedores compreendam o código que estão revisando.</li>
+<li>Com esses itens realizados, automatize a execução dos testes para que eles possam ser facilmente rodados toda vez que houver uma alteração no código. Utilize ferramentas de teste apropriadas para a linguagem e plataforma em que você está trabalhando.</li>
+</ol>
+<p>A partir desse primeiro entendimento vamos conhecer o padrão de escrita de testes <em>Triple AAA</em>.</p>
+<h3 id="padrão-de-escrita-de-testes-triplea">Padrão de escrita de testes Triple A</h3>
+<p>Dentre do completo guia da pirâmide de testes, um dos testes mais importantes é o teste unitário. Dentro dessa camada há muitas formas de você estar escrevendo seu teste, contudo o mais utilizado e mais prático de se aplicar é o <em>triple A.</em> Esse padrão vem das três etapas que possuem o nome começando com A (<em>Arrange</em>, <em>Act</em> e <em>Assert</em>), abaixo tem a explicação de cada parte:</p>
+<ul>
+<li><em><strong>Arrange</strong></em>: Nesta etapa nós configuramos tudo o que é necessário para que o nosso teste possa rodar, inicializamos variáveis e criamos os <em>mocks</em>.</li>
+<li><em><strong>Act:</strong></em> Esta etapa é onde rodamos de fato o nosso teste. Chamamos alguma função ou método que queremos por a prova.</li>
+<li><em><strong>Assert</strong></em>: Esta etapa é onde faremos nosso assert. É onde verificamos se a operação realizada na etapa anterior (<em>Act</em>) surtiu o resultado esperado. Assim sabemos se o teste passa ou falha.</li>
+</ul>
+<p>Bom, após entendermos do <em>Triple A</em>, vamos realizar uma prática?</p>
+<p><img src="/images/posts/atuacao-do-qa-no-tdd/image-02.jpg" alt="Photo by Blake Connally on Unsplash"></p>
+<p>Photo by <a href="https://unsplash.com/@blakeconnally">Blake Connally</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+<h3 id="pratica">Pratica</h3>
+<p>Para a prática é necessário primeiramente as seguintes ferramentas instaladas:</p>
+<ul>
+<li><a href="https://code.visualstudio.com/download">VSCode</a>;</li>
+<li><a href="https://nodejs.org/en/download/current">Node</a>;</li>
+</ul>
+<p>Com essas ferramentas instaladas em nossa máquina primeiro vamos criar o projeto <em>node</em> para isso escolha uma pasta para seu projeto e execute o comando <code>npm init -y</code>para criarmos o <em>package.json.</em></p>
+<p>Após criado o projeto <em>node</em>, execute o comando <code>npm install --save-dev jest</code>.Após terminado a instalação vamos para a pratica.</p>
+<p>Suponhamos que pegamos uma tarefa que o objetivo seja inverter uma palavra, logo de inicio já iríamos criar o arquivo para começar a codificar, contudo vamos usar o TDD que aprendemos na semana passada e criar o arquivo de teste. Nosso caso principal é com entrada de uma palavra a mesma deve voltar invertida, exemplo, adicionando banana deve voltar ananab.</p>
+<p>Então abaixo nosso primeiro caso de teste.</p>
+<p>test(&lsquo;Palavras normais e que deve voltar seu formato invertido&rsquo;, () =&gt; {<br>
+//Arrange<br>
+const reverseString = require(&rsquo;./reverseString.js&rsquo;);<br>
+//Act<br>
+const string = reverseString(&lsquo;carro&rsquo;);<br>
+//Assert<br>
+expect(string).toBe(&lsquo;orrac&rsquo;);<br>
+expect(reverseString(&lsquo;banana&rsquo;)).toBe(&lsquo;ananab&rsquo;);<br>
+expect(reverseString(&lsquo;joao&rsquo;)).toBe(&lsquo;oaoj&rsquo;);<br>
+});</p>
+<p>Show, após criarmos nosso caso de teste vamos para o segundo ciclo, criar a função para inverter as string.</p>
+<p>function reverseString(str) {<br>
+var newString = &ldquo;&rdquo;;<br>
+for (var i = str.length - 1; i &gt;= 0; i&ndash;) {<br>
+newString += str[i];<br>
+}<br>
+return newString;<br>
+}</p>
+<p>Criado meu código para inverter uma <em>string</em> ao invés de executarmos o código e ficarmos fazendo várias tentativas, podemos executar nosso teste criado e validar se nossa lógica está correta, para isso execute o comando <code>npm run test</code>. Caso esteja correto o código irá avisar que passou os testes, caso tenha um erro, volta-se para o ciclo de desenvolvimento até que passe o teste.</p>
+<p>Aqui nesse momento quando passou os testes podemos pensar, terminei bora pra próxima tarefa, calma jovem, você está pulando uma etapa muito importante que é de <em>refatoração</em>. Se você perceber, no código acabei usando um laço de repetição para percorrer a minha <em>string</em>, contudo, sabemos que existe métodos prontos em javascript como o <em>reverse()</em> e <em>join()</em>. Assim vamos para a etapa de <em>refatoração</em> primeiramente usando o reverse ao invés do laço de repetição e posteriormente usando o <em>join()</em> para unir o texto que foi separado no comando <em>split()</em>. O código ficando no formato abaixo.</p>
+<p>const reverseString = (string) =&gt; string.split(&rsquo;&rsquo;).reverse().join(&rsquo;&rsquo;);</p>
+<p>Acabamos de simplificar o código de 7 linhas para somente 1 linha, deixando o código mais limpo e com uma complexidade baixa de leitura.</p>
+<p>Para não se estender muito o artigo*,* criei mais um exemplo de calculadora, para você ver o projeto inteiro segue o link do <a href="https://github.com/jfilhoGN/exemplo-tdd-aaa">Github</a>.</p>
+<p>A partir desse entendimento da prática de como desenvolvemos código utilizando TDD, abaixo trago alguns exemples práticos para que gere <em>insights</em> para você aplicar na empresa que atua, então vamos lá?</p>
+<p>Um dos primeiros pontos que o QA deve observar no time é a questão da maturidade que o time se encontra, se o time é recente acredito que você conseguirá aplicar inicialmente a prática do TDD para que gere uma cultura baseada na criação de testes. Caso o time já tenha uma maturidade já desenvolvida baseada na entrega a todo custo, nesse caso é interessante você se basear em trazer aos poucos a cultura de qualidade e mostrando os benefícios do TDD e como aplicar.</p>
+<p>Após você conhecer o ambiente que está trabalhando, use toda sua comunicação para trazer o time de desenvolvimento para seu lado, escutando as dores que eles sentem para desenvolver, como que é a forma de entrega do time, cadência das demandas, fazendo isso você entenderá como está o time e se o TDD funcionara para esse momento, caso você perceba que não é o momento você já conseguiu uma confiança com o time de engenharia por ter ouvido e entendido a dores deles.</p>
+<p>Caso dê <em>match</em> que é o momento para o TDD, use os esforços para mostrar a importância do TDD e aplicar em casos iniciais com um engenheiro em específico. Nesse momento trabalhe em conjunto com ele para entender o desenvolvimento e auxiliar a pensar nos tipos de teste que ele pode realizar. Um exemplo nessa parte é unir o framework de metodologia ágil com o TDD, abaixo segue um exemplo prático.</p>
+<p>A maioria dos times realiza um refinamento e planeja o tamanho das tarefas, se a tarefa possuir um tamanho muito grande e o time perceber que não da para dividir, combine com o time que essa tarefa é interessante ser aplicado o TDD como garantia da entrega com segurança, bem como você estará auxiliando o engenheiro nesse desenvolvimento. Caso tenha receio de usar em tarefas grandes, você pode inverter a lógica para tarefas pequenas e trazer o time como todo para aplicar TDD.</p>
+<p>Sempre recorde que a evolução deve ser constante e com muito <em>feedback</em>, que os testes criados sejam executados a todo instante que a comunicação é a melhor forma de unir a teoria e prática.</p>
+<p>É isso pessoal, hoje conhecemos um pouco sobre a participação do QA na escrita de código utilizado TDD e como aplicar nos times que atua.</p>
+<p>Para ter conteúdos semanais sobre Tecnologia e Qualidade de Software, assine minha newsletter <a href="https://joaomartinsfilho.substack.com/">Tech &amp; Quality</a> 🚀.</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

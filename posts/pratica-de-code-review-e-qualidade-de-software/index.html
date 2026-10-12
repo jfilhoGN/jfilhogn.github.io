@@ -1,0 +1,352 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    
+        |
+        Prática de Code Review e Qualidade de Software
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.152.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="" />
+  <meta
+    name="description"
+    content="Sempre que falamos de Qualidade de Software, logo pensamos em um conjunto de práticas que visa uma entrega de software contendo…"
+  />
+  
+  
+        <link rel="stylesheet" href="/css/anatole.min.7a694fa58e76745d737e69fb2356353688d4883a950ee2882166c7b4e924ca24.css" integrity="sha256-emlPpY52dF1zfmn7I1Y1NojUiDqVDuKIIWbHtOkkyiQ=" crossorigin="anonymous" />
+      
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://jfilhogn.github.io/posts/pratica-de-code-review-e-qualidade-de-software/" />
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.8724ddf9268dee451060f191961647573c7f592fbccc6d858746236b3f915813.js"
+      integrity="sha256-hyTd&#43;SaN7kUQYPGRlhZHVzx/WS&#43;8zG2Fh0Yjaz&#43;RWBM="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Prática de Code Review e Qualidade de Software">
+  <meta name="twitter:description" content="Sempre que falamos de Qualidade de Software, logo pensamos em um conjunto de práticas que visa uma entrega de software contendo…">
+
+
+
+  
+  <meta property="og:url" content="https://jfilhogn.github.io/posts/pratica-de-code-review-e-qualidade-de-software/">
+  <meta property="og:site_name" content="Blog - João Martins Filho">
+  <meta property="og:title" content="Prática de Code Review e Qualidade de Software">
+  <meta property="og:description" content="Sempre que falamos de Qualidade de Software, logo pensamos em um conjunto de práticas que visa uma entrega de software contendo…">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-01-04T23:01:57+00:00">
+    <meta property="article:modified_time" content="2023-01-04T23:01:57+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Prática de Code Review e Qualidade de Software",
+        "headline": "Prática de Code Review e Qualidade de Software",
+        "alternativeHeadline": "",
+        "description": "
+      Sempre que falamos de Qualidade de Software, logo pensamos em um conjunto de práticas que visa uma entrega de software contendo…
+
+
+    ",
+        "license": "",
+        
+        "inLanguage": "pt-br",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/jfilhogn.github.io\/posts\/pratica-de-code-review-e-qualidade-de-software\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": ""
+        },
+        "dateCreated": "2023-01-04T23:01:57.16Z",
+        "datePublished": "2023-01-04T23:01:57.16Z",
+        "dateModified": "2023-01-04T23:01:57.16Z",
+        "publisher":{
+            "@type":"Organization",
+            "name":  null ,
+            "url": "https://jfilhogn.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/jfilhogn.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/jfilhogn.github.io\/posts\/pratica-de-code-review-e-qualidade-de-software\/",
+        "wordCount" : "371",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/IMG-0019.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/"></a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p></p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Prática De Code Review E Qualidade De Software</h1>
+      
+      <p>Sempre que falamos de Qualidade de Software, logo pensamos em um conjunto de práticas que visa uma entrega de software contendo características como eficiência, corretude e que tenha padrões que facilite manutenções. Uma prática utilizada para garantir essas características é o Code Review.</p>
+<p>O <em>code review</em> é uma análise minuciosa do código de uma aplicação, software ou uma solução, onde seu objetivo não é somente encontrar erros, mas também a falta de padrão, nomes incorretos de variáveis e possíveis melhorias na lógica do desenvolvimento. Nesse texto traremos informações que podem auxiliar nessa prática, uma delas são:</p>
+<ol>
+<li><strong>Seja educado:</strong> quando seu colega pede a você que revise seu código, não deixe de fazê-lo, não negligencie o seu colega pois se ele pediu para você revisar é porque ele confiou em você algo que é importante. Caso esteja com os prazos apertados, o diálogo é a melhor escolha, estipule um tempo que você tirará para realizar essa revisão;</li>
+<li><strong>Pessoas não estão sendo avaliadas:</strong> Isso é tão importante para os revisores, quanto para quem está submetendo. O <em>feedback</em> que o código recebe durante o Code Review não torna o desenvolvedor que escreveu o código bom ou ruim.</li>
+<li><strong>Faça um breve <em>check list</em>:</strong> com o checklist você consegue ter uma linha de raciocínio para a prática bem como uma consistência. Alguns exemplos são:</li>
+</ol>
+<ul>
+<li>O código está compreensível?</li>
+<li>Existe algum código redundante ou duplicado?</li>
+<li>O código está seguindo o padrão estrutural?</li>
+<li>As possíveis exceções estão sendo tratadas?</li>
+<li>Os identificadores das variáveis e métodos estão coerentes?</li>
+<li>O código está suficientemente documentado?</li>
+<li>Os requisitos foram atendidos?</li>
+</ul>
+<p>Seguindo esses breves pontos o <em>code review</em> traz diversas vantagens, como:</p>
+<ul>
+<li>Compartilhar conhecimento sobre o código;</li>
+<li>Encontrar possíveis bugs e vulnerabilidades;</li>
+<li>Propor diferentes abordagens para um mesmo problema;</li>
+<li>Aumenta a colaboração;</li>
+<li>Ajuda a padronizar o código fonte da aplicação, uma vez que regras de implementação são definidas, com o processo de <em>code review</em>, estas regras podem ser verificadas e sinalizadas caso exista algo fora do padrão.</li>
+</ul>
+<p>Para quem quer aprofundar no Code Review, deixo três referências de livros que podem trazer diversos insumos:</p>
+<ul>
+<li>Código Limpo (Clean Code) — Robert Cecil Martin</li>
+<li>O Codificador Limpo — Robert Cecil Martin</li>
+<li>Jornada Ágil de Qualidade — Antonio Muniz, Bárbara Cabral, Rodolfo Colares, Carol Vilas Boas</li>
+</ul>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        
+        2026
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.8cc4e58cd5f865334908a0579db7b398d0017f8bf8633d7dd09582841b6f6d0a.js"
+    integrity="sha256-jMTljNX4ZTNJCKBXnbezmNABf4v4Yz190JWChBtvbQo="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
